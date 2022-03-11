@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Events</title>
+        <link rel="stylesheet" href="general.css">
+        <script type="text/javascript" src="general.js"></script>
+    </head>
+    <body>
+<fieldset>
+    <legend>Do you have any qualifications?</legend>
+    <table>
+        <h2>Level Of Education</h2>
+        <th>
+        <td rowspan="2">Certificate Obtained</td>
+        <td rowspan="2">Institute attended</td>
+        <td colspan="2">when</td>
+        </th>
+        <tr>
+            <td></td>
+            <td>start</td>
+            <td>end</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="date"></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="date"></td>
+            <td><input type="date"></td>
+        </tr>
+    </table>
+    <h2>Have Any Programming Experience</h2>
+    <label>
+        <span>If yes</span>
+        <input name="Programming_Option_Yes" type="radio" onclick="show(true, 'programming_languages')">
+    </label>
+    <div id="programming_languages" hidden>
+        <label>
+            <input type="checkbox">
+            <span>Php</span>
+        </label>
+        <label>
+            <input type="checkbox">
+            <span>Javascript</span>
+        </label>
+        <label>
+            <input type="checkbox">
+            <span>Html</span>
+        </label>
+        <label>
+            <input type="checkbox">
+            <span>Sql</span>
+        </label>
+    </div>
+</fieldset>
+<button type="submit">Submit</button>
+</body>
+</html>

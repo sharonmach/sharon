@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Events</title>
+        <link rel="stylesheet" href="general.css">
+        <script type="text/javascript" src="general.js"></script>
+    </head>
+    <body>
+        <h3>Registration Form</h3>
+        <fieldset id="Providers">
+            <legend>Select how you will like to login</legend>
+            <label>
+                <input name="providers_option" data-ename="user" type="radio" >
+                <span>Google</span>
+            </label>
+            <label>
+                <input name="providers_option" type="radio">
+                <span>Facebook</span>
+            </label>
+            <label>
+                <input name="providers_option" type="radio" onclick="show(true, 'credentials')">
+                <span>Outlook</span>
+            </label>
+            <fieldset id="credentials" hidden>
+                <legend>Credentials</legend>
+                <label>
+                    <span>Email</span>
+                    <input name="credentials_email" data-ename="user" type="text" >
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input name="credentials_password" type="password">
+                </label>
+                <label>
+                    <span>Full Name</span>
+                    <input type="text" name="credentials_name">
+                </label>
+                <label>
+                    <span>Phone Number</span>
+                    <input name="credentials_phone_no" type="text">
+                </label>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </fieldset>
